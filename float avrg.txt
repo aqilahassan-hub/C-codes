@@ -1,0 +1,29 @@
+//input float values and find average 5 decimals after decimal ofx 3.5 and y 7.5.
+
+#include <iostream>
+
+
+//iomanip is used for setprecision
+//setprecision is used for limiting the value after decimal
+#include<iomanip>
+
+
+using namespace std;
+
+
+int main()
+
+{
+    
+    float x,y,media;
+
+    cin>>x>>y;
+    
+    media = ((x*3.5)+(y*7.5))/(3.5+7.5);
+
+    cout<<"MEDIA = "<<fixed<<setprecision(5)<<media<<endl;
+
+
+    return 0;
+
+}
