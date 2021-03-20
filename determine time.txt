@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int second,hour,minutes;
+    cin>>second;
+    if(second<=60){
+        cout<<"0:0:"<<second;
+    }
+    if(second > 60){
+            if(second <= 3600){
+                    minutes = second / 60;
+                    second = second - (minutes * 60);
+                    cout<< "0:" << minutes <<":"<< second;
+            }
+    }
+    if(second > 3600){
+        hour = second/3600;
+        minutes = (second - (hour * 3600))/60;
+        second = second - (minutes * 60)-(hour*3600);
+        cout<<hour<<":"<< minutes <<":"<< second;
+    }
+
+    return 0;
+}
