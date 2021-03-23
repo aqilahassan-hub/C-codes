@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int c[70];
+    printf("enter a line:");
+    //scanf("%s",c);
+   // printf("The first word you entered you entered is:%s\n",c);
+    fgets(c, sizeof(c), stdin);  // read string
+    printf("Line is: ");
+    puts(c);
+return 0;
+
+}
